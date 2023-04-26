@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>freeCodeCamp Survey Form
+</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form
+    </h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input id="name" type="text" name="name" placeholder="Enter Your First & Last Name" required /></label>
+        <label id="email-label">Email <input id="email" type="email" name="email" placeholder="Enter Your Email" required /></label>
+        <label id="number-label">Age (optional) <input id="number" type="number" name="age" min="13" max="120" placeholder="13-120" required /></label>
+        <label>Which option best describes your current role?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner</option>
+            <option value="4">Prefer Not to Say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        <label for="recommend">What is your favorite feature of freeCodeCamp?
+        </label>
+        <label for="recommend"><input id="recommend" type="radio" name="recommend" class="inline" value="Definitely" required/> Definitely
+        </label>
+        <label for="recommend"><input id="recommend" type="radio" name="recommend" class="inline" value="Maybe" required/> Maybe
+        </label>
+        <label for="recommend"><input id="recommend" type="radio" name="recommend" class="inline" value="Not Sure" required/> Not Sure
+        </label>
+        <label for="improvments">What would you like to see improved? (Check all that apply)
+          <input id="improvments" 
+class=[type="checkbox" name="improvments" value="Front-end Projects"/>Front-end Projects</label>
+          <label for="improvments">
+          <input id="improvments" type="checkbox" name="improvments" value="Back-end Projects"/>Back-end Projects</label>
+          <label for="improvments">
+          <input id="improvments" type="checkbox" name="improvments" value="Data Visualization"/>Data Visualization</label>
+          <label for="improvments">
+          <input id="improvments" type="checkbox" name="improvments" value="Challenges"/>Challenges</label>
+          <label for="improvments">
+          <input id="improvments" type="checkbox" name="improvments" value="Open Source Community"/>Open Source Community</label>
+          <label for="improvments">
+          <input id="improvments" type="checkbox" name="improvments"value="Gitter help rooms"/>Gitter help rooms</label>
+          <label for="improvments">
+          <input id="improvments" type="checkbox" name="improvments" value="Videos"/>Videos</label>
+          <label for="improvments">
+          <input id="improvments" type="checkbox" name="improvments" value="City Meetups"/>City Meetups</label>
+          <label for="improvments">
+          <input id="improvments" type="checkbox" name="improvments" value="Wiki"/>Wiki</label>
+          <label for="improvments">
+          <input id="improvments" type="checkbox" name="improvments" value="Forum"/>Forum</label>
+          <label for="improvments">
+          <input id="improvments" type="checkbox" name="improvments" value="Additional Courses"/>Additional Courses</label>
+          <label>Additional Comments or suggestions?
+            <textarea id="additional-comments" name="additional-comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
